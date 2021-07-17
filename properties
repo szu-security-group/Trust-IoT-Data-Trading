@@ -1,0 +1,11 @@
+arbitratorAddress = a010553Bd53DE41Db15E759E2739B9218152Fe9e
+dataOwnerAddress = 2daec054d9b84232707d2ed9f6ed65aeb8772704
+dataBuyerAddress = ad2f9093c4a089bcfae5656ce57c20bbc233c75a
+serviceFee = 20000000000000000
+penaltyFee = 10000000000000000
+duringTime = 3000
+contractAddress = 0x1653b4fc645526545eaba5747f1721d3e387368e
+httpService = https://kovan.infura.io/v3/fc7451f984da4d598db57c7f8538ef13
+arbitratorWalletPassword = your 339339
+cloudWalletPassword = your 339339
+clientWalletPassword = 339339

@@ -1,0 +1,257 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "cloud",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "client",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "duringTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "g",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "p",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "q",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "ret",
+				"type": "string"
+			}
+		],
+		"name": "Arbitrate",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "ret",
+				"type": "string"
+			}
+		],
+		"name": "ClientConfirm",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "ret",
+				"type": "string"
+			}
+		],
+		"name": "CloudDoRound1",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "ret",
+				"type": "string"
+			}
+		],
+		"name": "CloudDoRound2",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "ret",
+				"type": "string"
+			}
+		],
+		"name": "RequestService",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "ret",
+				"type": "string"
+			}
+		],
+		"name": "TerminatedService",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "arbitrate",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "clientConfirm",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "verifyResult",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "hashOfS1",
+				"type": "uint256"
+			}
+		],
+		"name": "cloudDoRound1",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "s2",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "randomBlock",
+				"type": "uint256"
+			}
+		],
+		"name": "cloudDoRound2",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getBasicInfos",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "cloud",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "client",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getDetailsInfos",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "serviceName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "verifyResult",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "hashOfS1",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "confirmStartTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "s2PublishStartTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "s2",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "duringTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "int256",
+				"name": "serviceStatus",
+				"type": "int256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "randomBlock",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "serviceName",
+				"type": "string"
+			}
+		],
+		"name": "requestService",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "terminatedService",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
